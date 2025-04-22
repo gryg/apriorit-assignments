@@ -1,0 +1,8 @@
+--- Directory Report ---
+Total Files: 3
+
+File Path                                                   Size (Bytes)   Last Modified            Read Only   
+----------------------------------------------------------------------------------------------------------------
+test_simple\aaa.txt                                         0              2025-04-22 14:29:17      No          
+test_simple\hedley.jpg                                      29221          2023-03-09 16:05:54      No          
+test_simple\test_simple_report.csv                          149            2025-04-22 14:31:04      No          

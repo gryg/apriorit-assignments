@@ -1,0 +1,37 @@
+--- Creating Thread Pool ---
+
+--- Posting Tasks ---
+Posted ThrowingTask.
+
+--- Getting Results (Futures) ---
+Task Multiply(Task Multiply(1, 2) started by thread 4
+Task Multiply(2, 3) started by thread 5
+0, 1) started by thread 2
+Task Multiply(3, 4) started by thread 3
+Task Multiply(0, 1) finished by thread 2 with result 0
+Task Multiply(3, 4) finished by thread 3 with result 12
+Task Multiply(2Task Multiply(1, 2) finished by thread 4 with result 2
+Task Multiply(4, 5) started by thread 2
+, 3) finished by thread 5 with result 6
+Task PrintMessage("Main: Got result for multiplication task 0: 0     
+Main: Got result for multiplication task 1: 2
+Main: Got result for multiplication task 2: 6
+Main: Got result for multiplication task 3: 12
+Hello from lambda!") started by thread 4
+Task Multiply(10, 5) started by thread 3
+Task PrintMessage("Hello from std::bind!") started by thread 5
+Message from thread 4: Hello from lambda!
+Task PrintMessage("Another message.") started by thread 4
+Message from thread 5: Hello from std::bind!
+Task ThrowingTask started by thread 5
+Task Multiply(10, 5) finished by thread 3 with result 50
+Task Multiply(4, 5) finished by thread 2 with result 20
+Main: Got result for multiplication task 4: 20
+Main: Got result for multiplication task 5: 50
+Main: Confirmed print task 0 completed.
+Main: Confirmed print task 1 completed.
+Message from thread 4: Another message.
+Main: Confirmed print task 2 completed.
+Main: Caught expected exception from ThrowingTask via future: Something went wrong in ThrowingTask!
+
+--- Main Function Ending (Pool Destruction) ---
